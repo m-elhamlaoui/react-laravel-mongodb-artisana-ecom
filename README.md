@@ -1,7 +1,7 @@
 # web-dev-jee-projet
 web-dev-jee-projet created by GitHub Classroom
 
-# Artisanal Artworks Ecommerce
+# Artisanal Artworks E-commerce
 
 ## Project Description
 
@@ -19,6 +19,7 @@ Our project seeks to connect artisans, collectors, and enthusiasts by providing 
 ### Backend:
 
 - **Laravel**: A PHP web application framework known for its elegant syntax and powerful features. Laravel provides a robust set of tools for building scalable and maintainable web applications, including database management, authentication, routing, and more.
+- **MongoDB**: NoSQL Database.
 
 ## Group Members
 
