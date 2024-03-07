@@ -1,6 +1,3 @@
-# web-dev-jee-projet
-web-dev-jee-projet created by GitHub Classroom
-
 # Artisanal Artworks E-commerce
 
 ## Project Description
