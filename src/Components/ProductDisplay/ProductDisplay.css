@@ -1,0 +1,110 @@
+/* Overall product display layout */
+.product-display {
+    display: flex;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f5f5f5; /* Light background for better contrast */
+    border-radius: 5px; /* Add subtle rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Left side for the image */
+  .pd-left {
+    flex: 1;
+  }
+  
+  .pd-main-img {
+    width: 100%; /* Maintain full width within container */
+    max-height: 300px; /* Set a maximum height for the main image */
+    object-fit: contain; /* Crop or scale to fit the container while maintaining aspect ratio */
+    border-radius: 5px; /* Add rounded corners to the main image */
+  }
+  
+  .pd-thumbnails {
+    display: flex;
+    margin-top: 10px; /* Add spacing above thumbnails */
+    justify-content: space-between; /* Distribute thumbnails evenly */
+  }
+  
+  .pd-thumb {
+    width: 75px;
+    height: 75px;
+    margin: 0 5px; /* Adjust spacing between thumbnails (no top/bottom) */
+    border: 1px solid #ddd;
+    cursor: pointer; /* Show a pointer on hover for thumbnails */
+    border-radius: 5px; /* Add rounded corners to thumbnails */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition on hover */
+  }
+  
+  .pd-thumb:hover {
+    transform: scale(1.1); /* Slightly enlarge thumbnails on hover */
+  }
+  
+  .pd-thumb.active {
+    border: 2px solid #f5b549; /* Highlight the active thumbnail */
+  }
+  
+  /* Right side for details */
+  .pd-right {
+    flex: 1.5; /* Give more space for details compared to image */
+    padding: 10px; /* Add some padding within the right section */
+  }
+  
+  .pd-right h1,
+  .pd-right p {
+    margin-bottom: 5px; /* Add spacing between elements */
+  }
+  
+  .pd-right-price {
+    font-weight: bold;
+    color: #f5b549; 
+  }
+  
+  .pd-right-tags {
+    margin-bottom: 10px; /* Add spacing below tags */
+  }
+  
+  .pd-tag {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #eee;
+    color: #333; /* Adjust tag text color */
+  }
+
+  .pd-right-color {
+    padding-bottom: 10px;
+  }
+  
+  .pd-right-star {
+    margin-top: 7px;
+     margin-bottom: 20px; 
+  }
+
+  .pd-right-star p {
+    margin-top: 2px;
+  }
+
+  .button-container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: flex-end; /* Align content at the right edge */
+    align-items: flex-end; 
+  }
+
+  button {
+    background-color: #f5b549; /* Maintain color for button */
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer; /* Show a pointer on hover */
+    transition: background-color 0.2s ease-in-out; /* Add smooth transition on hover */
+  }
+  
+  button:hover {
+    background-color: #d74a07; /* Change button color on hover (darker orange) */
+  }
+  

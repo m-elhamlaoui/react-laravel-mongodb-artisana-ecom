@@ -1,0 +1,46 @@
+.similar-products {
+    margin-top: 20px; /* Add spacing above similar products */
+    border-top: 1px solid #ddd; /* Add a dividing line */
+    padding-top: 10px; /* Add padding above the content */
+  }
+  
+  .similar-products h2 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+  }
+  
+  .similar-products-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute products evenly */
+  }
+  
+  .similar-product {
+    width: calc(33% - 20px); /* Adjust width based on columns (3 columns) */
+    margin-bottom: 20px; /* Add spacing between products */
+    padding: 10px; /* Add padding within each product */
+    border: 1px solid #eee; /* Add a thin border */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .similar-product img {
+    width: 100%; /* Maintain full width within product */
+    height: 150px; /* Set a fixed height for images */
+    object-fit: cover; /* Crop or scale to fit the container while maintaining aspect ratio */
+  }
+  
+  .similar-product-name,
+  .similar-product-price {
+    margin-bottom: 5px; /* Add spacing between elements */
+  }
+  
+  .similar-product-rating {
+    display: flex;
+    align-items: center; /* Align stars and reviews vertically */
+    margin-top: 5px; /* Add spacing above rating */
+  }
+  
+  .similar-product-rating p {
+    margin-left: 5px; /* Add spacing between stars and reviews */
+  }
+  
