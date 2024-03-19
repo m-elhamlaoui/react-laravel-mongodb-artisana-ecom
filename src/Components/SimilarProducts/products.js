@@ -1,7 +1,9 @@
+import p1 from '../Assets/p1.png';
+
 const products = [
     {
       id: 1,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 1',
       price: 19.99,
       category: 'Electronics',
@@ -13,7 +15,7 @@ const products = [
     },
     {
       id: 2,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 2',
       price: 29.95,
       category: 'Clothing',
@@ -25,7 +27,7 @@ const products = [
     },
     {
       id: 3,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 3',
       price: 49.99,
       category: 'Homeware',
@@ -37,7 +39,7 @@ const products = [
     },
     {
       id: 4,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 4',
       price: 15.99,
       category: 'Electronics',
@@ -49,7 +51,7 @@ const products = [
     },
     {
       id: 5,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 5',
       price: 34.50,
       category: 'Sports',
@@ -61,7 +63,7 @@ const products = [
     },
     {
       id: 6,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 6',
       price: 79.99,
       category: 'Beauty',
@@ -73,7 +75,7 @@ const products = [
     },
     {
       id: 7,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 7',
       price: 24.99,
       category: 'Toys',
@@ -85,7 +87,7 @@ const products = [
     },
     {
       id: 8,
-      imageUrl: '../Assets/p1.png',
+      imageUrl: p1,
       name: 'Product 8',
       price: 9.99,
       category: 'Books',
