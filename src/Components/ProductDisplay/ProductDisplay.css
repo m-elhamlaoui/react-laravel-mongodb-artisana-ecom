@@ -16,9 +16,11 @@
   
   .pd-main-img {
     width: 100%; /* Maintain full width within container */
-    max-height: 300px; /* Set a maximum height for the main image */
+    max-height: 100%; /* Set a maximum height for the main image */
     object-fit: contain; /* Crop or scale to fit the container while maintaining aspect ratio */
-    border-radius: 5px; /* Add rounded corners to the main image */
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .pd-thumbnails {
@@ -48,7 +50,8 @@
   /* Right side for details */
   .pd-right {
     flex: 1.5; /* Give more space for details compared to image */
-    padding: 10px; /* Add some padding within the right section */
+    padding: 10px;
+    padding-left: 10px;
   }
   
   .pd-right h1,
