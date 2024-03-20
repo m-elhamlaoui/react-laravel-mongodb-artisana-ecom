@@ -1,0 +1,91 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-bar input[type="text"] {
+  padding: 12px; /* Increased padding */
+  width: 300px; /* Increased width */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  color: #000; /* Text color */
+  margin-right: 10px;
+}
+/* Logo styles */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 60px; /* Increased size of the logo */
+  width: auto;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000; /* Black border */
+  border-radius: 20px; /* Rounded corners */
+}
+
+
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: #0056b3; /* Dark blue color */
+  color: #ffffff;
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+}
+
+/* Right side links styles */
+.right-side {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.right-side a {
+  text-decoration: none;
+  color: #007bff; /* Dark blue color */
+  background-color: #fff; /* White background */
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right-side a:first-child {
+  margin-right: 10px;
+  background-color: #0056b3; /* Dark blue color */
+  color: #fff;
+}
+
+.right-side a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Cart icon styles */
+.right-side a img {
+  height: 30px;
+  width: auto;
+  border: none; /* Remove border around the image */
+  cursor: pointer;
+}
+
+.navbar {
+  position: relative; /* Assure que la vidéo reste en arrière-plan */
+  z-index: 1; /* Met le contenu de la barre de navigation au-dessus de la vidéo */
+}
+
+
+
