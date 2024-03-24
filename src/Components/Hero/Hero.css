@@ -1,5 +1,5 @@
 .navbar {
-  position: fixed; /* Keep the navbar fixed at the top */
+  /*position: fixed;  Keep the navbar fixed at the top */
   width: 100%; /* Ensure full width */
   z-index: 2; /* Set a higher z-index to keep it above other elements */
 }
@@ -59,12 +59,9 @@
 
 .category-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 90px; /* Adjust spacing as needed */
-  background-color: #ffffff; /* White background for the circles */
-  padding: 20px; /* Add padding to the container */
-  justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 7vh 0;
 }
 
 .category {
@@ -97,13 +94,29 @@
 }
 
 .CategorySection {
-  font-weight: bold; /* Make the text bold */
-  color: #cb510b; /* Set text color to the color of the ground */
-  font-family: Georgia, serif; /* Set font-family */
-  text-align: center; /* Center align the text */
-  font-size: 24px;
-  margin-top: 110px; /* Adjust spacing as needed */
+  font-weight: bold;
+    color: #cb510b;
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 24px;
+    background-color: #fff;
+    padding: 12vh 0 12vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
+}
+
+.categories-p{
+  background-color: white;
+  text-align: center;
+  margin: 6px;
+  font-size: 28px;
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 .section-container {
@@ -112,7 +125,6 @@
   align-items: center; /* Center align items horizontally */
   background-color: #b85010; /* Green background color */
   padding:  60px; /* Add padding to create space between the sections */
-  margin-top:120px;
 }
 
 .top-section {
@@ -199,4 +211,12 @@ footer {
   margin-top: 20px; /* Adjust margin between social icons and copyright */
   font-size: 14px; /* Adjust font size as needed */
   color: #6c757d; /* Text color for copyright */
+}
+
+.CategorySection{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 44px;
 }

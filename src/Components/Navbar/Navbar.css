@@ -64,14 +64,15 @@
   cursor: pointer;
 }
 
-.right-side a:first-child {
+/*.right-side a:first-child {
   margin-right: 10px;
-  background-color: #0056b3; /* Dark blue color */
+  background-color: #0056b3; /* Dark blue color 
   color: #fff;
-}
+}*/
 
 .right-side a:hover {
-  background-color: #f0f0f0; /* Light gray background on hover */
+  background-color: #0056b3;
+   /* Light gray background on hover */
 }
 
 /* Cart icon styles */
@@ -87,5 +88,9 @@
   z-index: 1; /* Met le contenu de la barre de navigation au-dessus de la vidéo */
 }
 
-
+.icon2{
+  width: 30px; /* Ajustez la taille de l'icône au besoin */
+  height: 30px;
+  
+}
 

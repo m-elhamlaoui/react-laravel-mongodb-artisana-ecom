@@ -14,6 +14,7 @@ import logo from '../Assets/logo.png'
 import instagram from '../Assets/instagram_icon.png'
 import pinterest from '../Assets/pinterest_icon.png'
 import whatsapp from '../Assets/whatsapp_icon.png'
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -35,7 +36,11 @@ export const Hero = () => {
       {/* Categories */}
       <div className='CategorySection'>
         <p>Explore our shop's products and infuse your life with the vibrant Moroccan essence.</p>
+        <br ></br>
       </div>
+        
+        <h1 className='categories-p'>Categories</h1>
+      <Link to="/products">
       <div className="category-container">
         <a href="/pottery" className="category">
           <img src={potteryImage} alt="Pottery" />
@@ -55,7 +60,7 @@ export const Hero = () => {
         <a href="/accessories" className="category">
           <img src={accessoriesImage} alt="Accessories" />
         </a>
-      </div>
+      </div></Link>
 
       
 
