@@ -133,6 +133,8 @@
   align-items: center; /* Center align items horizontally */
   background-color: #b85010; /* Green background color */
   padding:  60px; /* Add padding to create space between the sections */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .top-section {
@@ -152,6 +154,8 @@
   background-color: #b85010; /* White background for the frames */
   border: 2px solid #b85010; /* White border around the frames */
   padding: 20px; /* Add padding to create space inside the frames */
+  color: white;
+  text-align: justify;
 }
 
 .subsection img {
