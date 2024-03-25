@@ -35,15 +35,13 @@ class CategoryController extends Controller
      */
     public function show(string $id)
     {
-        $category = Category::with('products')->where('id', $id)->first();
-        if(!$category){
-            return response()->json(
-                [
-                    'error' => 'Category not found'
-                ], 404
-            );
+        $products = Category::with('products')->find($id);
+
+        if (!$products) {
+            return response()->json(['error' => 'Category not found'], 404);
         }
-        return response()->json($category);
+
+        return response()->json(['products' => $products]);
     }
 
     /**

@@ -1,17 +1,40 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
+import { useParams } from "react-router-dom";
+import axios from '../../api/axios';
 import './SimilarProducts.css';
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Products = ({ products }) => {
+const Products = () => {
+  const [products, setProducts] = useState([]);
+  const { categoryId } = useParams();
+  useEffect(() => {
+    // Fetch categories from your backend API
+    const fetchCategories = async () => {
+      try {
+        const response = await axios.get(`/api/categories/${categoryId}`); // Use backticks here
+        console.log('Response:', response.data);
+        if (response.status === 200) {
+          setProducts(response.data.products.products);
+        } else {
+          console.error('Failed to fetch products:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error.message);
+      }
+    };
+  
+    fetchCategories();
+  }, [categoryId]); 
   return (
     <div className="products-wrapper"> {/* Parent container */}
       <h2 className="titre">Our Products</h2> {/* Title */}
       <section className="products-container">
          {/* Products container */}
-        {products.map((product) => (
+        {products.map(product => (
           <Link to="/productinfos">
-          <div className="product" key={product.id}>
+          <div className="product" key={product._id}>
             <img src={product.imageUrl} alt={product.name} />
             <p className="product-name">{product.name}</p>
             <p className="product-price">${product.price.toFixed(2)}</p>

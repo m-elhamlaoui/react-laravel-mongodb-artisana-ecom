@@ -19,12 +19,17 @@ class ProductFactory extends Factory
     protected $model = Product::class;
     public function definition(): array
     {
+        $category = Category::all()->random();
         return [
-            'name' => $this->faker->name(),
-            'description' => $this->faker->sentence(),
-            'price' => $this->faker->randomFloat(2, 10, 100),
-            'category_id' => Category::all()->random()->id,
-            'image_url' => $this->faker->imageUrl()
+        'imageUrl' => $this->faker->imageUrl(),
+        'name' => $this->faker->words(2, true),
+        'price' => $this->faker->randomFloat(2, 10, 100),
+        'category' => $category->name,
+        'description' => $this->faker->sentence(),
+        'rating' => $this->faker->randomFloat(1, 1, 5),
+        'reviews' => $this->faker->numberBetween(5, 50),
+        'tags' => $this->faker->words($this->faker->numberBetween(1, 3)),
+        'colorOptions' => $this->faker->randomElements(['red', 'blue', 'green', 'yellow'], $this->faker->numberBetween(1, 4)),
         ];
     }
 }

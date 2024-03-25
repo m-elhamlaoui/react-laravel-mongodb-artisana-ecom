@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
     public function run(): void
     {
         Category::all()->each(function ($category) {
-            $category->products()->saveMany(Product::factory()->count(3)->make());
+            $category->products()->saveMany(Product::factory()->count(8)->make());
         });
     }
 }

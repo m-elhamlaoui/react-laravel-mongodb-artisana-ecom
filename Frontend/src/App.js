@@ -28,7 +28,7 @@ function App() {
           <Route path="/login" element={<Loginform setIsAuthenticated={setIsAuthenticated} />} />
           <Route path="/createaccount" element={<Createaccountform setIsAuthenticated={setIsAuthenticated} />} />
           <Route path="/productinfos" element={<ProductDisplay />} />
-          <Route path="/products" element={<SimilarProducts products={products}/>} />
+          <Route path="/products/:categoryId" element={<SimilarProducts products={products}/>} />
           <Route path="/cart" element={<CartPage />} />
 
         </Routes>
