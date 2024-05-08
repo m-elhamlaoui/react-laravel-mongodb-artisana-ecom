@@ -5,6 +5,12 @@
 ## Project Name
 E-Commerce Website
 
+## Project Members
+Ali ELKAROUAOUI
+Nizar GUERRABI
+Alabadila MALAININE
+Salma BOULIJA
+
 ## Description
 This project is an e-commerce website developed using React.js and Laravel. It allows users to browse through various categories of products, view product details, add products to cart, and proceed with the checkout process.
 
